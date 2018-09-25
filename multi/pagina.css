@@ -1,0 +1,285 @@
+<IfModule mod_expires.c>
+	ExpiresActive On
+	ExpiresByType text/css "access plus 1 week"
+	ExpiresByType image/gif "access plus 1 month"
+	ExpiresByType image/png "access plus 1 month"
+
+</IfModule>
+
+html {
+  background-color: #FE7809;
+  line-height: 1.7;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* Main Column Typography */
+.main-area h2 {
+  font-size: 165%;
+  font-weight: normal;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media screen and (min-width: 1300px) {
+  body {
+    font-size: 17px;
+  }
+
+  .container {
+    max-width: 1000px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-device-width : 480px) {
+
+        #sidebar{
+	        display:none;
+	        }
+
+                #menu{
+               text-align:center;
+               }
+}
+
+header {
+	padding-top: 50px;
+	color: #FFF;
+	background-color: #F5A13D;
+  	background-image: url(aa.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: contain, cover;
+}
+
+header h1 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 165%;
+}
+
+header p {
+  font-size: 90%;
+  margin: 0;
+}
+
+/* Site Navigation */
+.site-nav {
+  margin-top: 20px;
+}
+
+.site-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav li {
+  list-style: none;
+  float: left;
+  margin-right: 5px;
+}
+
+.site-nav a {
+  display: block;
+  color: #fff;
+  padding: 10px 20px;
+  background-color: #FFC595;
+}
+
+.site-nav a:hover {
+  background-color: #FFAD69;
+}
+
+@media screen and (max-width: 700px) {
+  .site-nav li {
+    width: 33.332%;
+    margin-right: 0;
+  }
+
+  .site-nav a {
+    padding: 15px 0;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .site-nav li {
+    width: 50%;
+  }
+}
+
+/* End Site Navigation */
+
+
+.content-area {
+  background-color: #fff;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+@media screen and (max-width: 480px) {
+  .content-area {
+    padding-top: 20px;
+  }
+}
+
+.main-area {
+  width: 66%;
+  float: left;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  width: 34%;
+  float: left;
+  background-image: url(12.png);
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+  color: #000;
+  background-color: #FFB375;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  font-size: 85%;
+   transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+}
+
+.sidebar:hover {
+	color: #000;
+	background-image: url(13.png);
+	background-repeat: no-repeat;
+	background-size: contain, cover;
+	transform: rotateY(90deg);
+    -ms-transform: translate(150px, 45px); /* IE 9 */
+    -webkit-transform: translate(150px, 45px); /* Safari y Chrome */
+    -moz-transform: translate(150px, 45px); /* Firefox */
+}
+
+
+@media screen and (max-width: 700px) {
+  .main-area,
+  .sidebar {
+    width: auto;
+    float: none;
+  }
+
+  .main-area {
+    padding-right: 0;
+  }
+}
+
+.info-box {
+  background-color: #FFC595;
+  border: 5px solid #FFAD69;
+  padding: 20px 40px 7px 40px;
+  margin-bottom: 1em;
+}
+
+@media screen and (max-width: 480px) {
+  .hide-small {
+    display: none;
+  }
+}
+
+.ui-menu ul {
+	margin: 0;
+	padding: 0;
+}
+
+.ui-menu li {
+	float: left;
+	list-style: none;
+	margin-right: 20px;
+}
+
+.ui-menu a {
+	display: block;
+	width: 50px;
+	height: 50px;
+	background-position: top left;
+	background-image: url(sprites.png);
+	text-indent: -9999px;
+	background-repeat: no-repeat;
+}
+
+.ui-facebook a:hover {background-position: -50px 0;}
+
+.ui-instagram a {background-position: 0 -50px;}
+.ui-instagram a:hover {background-position: -50px -50px;}
+
+
+
+footer {
+  text-align: center;
+  font-size: 85%;
+  color: #000;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}
+< table border=1 >
+table{ border:solid 1px #F5A13D; border-collapse: collapse; font-size: 8pt; font-family:"Trebuchet MS", "Helvetica"; }
+table td{ border:solid 1px #F5A13D; } 
+table thead tr { background-color: #F5A13D; color:#fff; }
+table thead th { border: solid 1px #777; }
+table tbody tr.claro{ background-color: #F7F7F7;}
+table tbody tr.oscuro{ background-color: #DFE8FF;}
+table tbody td:first-child{ background-color: #F5A13D; color:#fff; width:1.5em; text-align:center; border-color:#777;}
+table tbody tr:hover{ background-color: #8FB8FF; cursor: pointer;}
+table tbody tr:hover td:first-child{ background-color: #233A5F;}
+
